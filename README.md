@@ -135,7 +135,7 @@ Se utilizzi questo codice o i dati per la tua ricerca, cita la tesi come segue:
 ```bibtex
 @thesis{disomma2026llm,
   author = {Di Somma, Giuseppe},
-  title = {Uso dei large language models a supporto dell'insegnamento e della comprensione didattica},
+  title = {Uso dei large language models a supporto dell’insegnamento e della comprensione didattica: studio sperimentale su task educativi},
   school = {Università degli Studi di Salerno},
   year = {2026},
   type = {Tesi di Laurea Triennale},
