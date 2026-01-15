@@ -38,7 +38,7 @@ Ecco come sono organizzati i file nel progetto:
 └── pipeline/                  # Core della valutazione
     └── evaluator_pipeline.py  # Agente Valutatore (Logica di scoring e penalità)
 
-# ⚙️ Flusso di Lavoro (Workflow)
+## ⚙️ Flusso di Lavoro (Workflow)
 
 Il processo sperimentale è automatizzato in due stadi principali:
 
