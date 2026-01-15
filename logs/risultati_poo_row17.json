@@ -1,0 +1,33 @@
+{
+  "task": "T2",
+  "disciplina": "POO",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è completamente corretta, dettagliata e priva di errori concettuali: spiega il funzionamento di super in Java sia nei costruttori che nell'override dei metodi, con esempi di codice chiari e spiegazione passo-passo. Tutte le regole chiave (prima istruzione, impossibilità di uso statico, relazione con override, ecc.) sono presenti e precise. Il formato rispetta le istruzioni e la specificità disciplinare è massima. Nessuna allucinazione, imprecisione o violazione di formato rilevata.",
+  "tempo_s": 7,
+  "token": 1100
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 1,
+    "totale_100": 92
+  },
+  "note_valutatore": "Il piano di studio è corretto, completo, chiaro, aderente alle istruzioni e specifico per l'insegnamento dell'IA e dei LLM. Ogni settimana ha un micro-obiettivo coerente, risorse suggerite e traguardi progressivi, in linea con le fonti e le buone pratiche didattiche[1][2][3]. Penalità di formato: la risposta usa titoli markdown (###) invece di frasi lineari come richiesto dal prompt, violando le istruzioni di output."
+  ,
+  "tempo_s": 7,
+  "token": 650
+}

@@ -1,0 +1,33 @@
+{
+  "task": "T1",
+  "disciplina": "POO",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è pienamente corretta: ogni quiz è pertinente, la soluzione è giusta e il ragionamento è dettagliato e accurato, senza errori concettuali o allucinazioni. La spiegazione di upcasting/downcasting è esatta e supportata da esempi coerenti con la letteratura di riferimento. Il formato rispetta le istruzioni e la specificità disciplinare è elevata."
+,  "tempo_s": 9,
+  "token": 1850
+}

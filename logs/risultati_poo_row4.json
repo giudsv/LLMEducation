@@ -1,0 +1,34 @@
+{
+  "task": "T1",
+  "disciplina": "POO",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 1,
+    "totale_100": 92
+  },
+  "note_valutatore": "Tutte le domande sono corrette, pertinenti e spiegate chiaramente, coprendo i concetti richiesti (classi, oggetti, incapsulamento, ereditarietà, polimorfismo, interfacce) e includendo almeno due domande con codice. Le spiegazioni sono precise e disciplinari. Penalità di 1 per violazione di formato: la risposta contiene riferimenti ipertestuali e note a piè di pagina, non richiesti dalle istruzioni, e una premessa non necessaria ('Scusa...'). Nessuna allucinazione o imprecisione rilevata."
+  ,
+  "tempo_s": 7,
+  "token": 950
+}

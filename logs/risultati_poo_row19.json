@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T2",
+  "disciplina": "POO",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è corretta, completa e chiara. Spiega in dettaglio l'uso di `super` per chiamare il costruttore della superclasse e per l'override di metodo, fornendo un esempio esplicativo e commentato passo-passo. Rispetta pienamente le istruzioni e il formato richiesto, senza errori concettuali o di sintassi. La specificità disciplinare è elevata, con riferimenti precisi alle regole del linguaggio Java (es. obbligo di `super` come prima istruzione nel costruttore, uso in contesto di ereditarietà e polimorfismo)[1][2][3].",
+  "tempo_s": 0,
+  "token": 0
+}
+```

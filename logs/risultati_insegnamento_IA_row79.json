@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 0,
+    "totale_100": 92
+  },
+  "note_valutatore": "La risposta è corretta, chiara e aderente alle istruzioni: presenta obiettivi, attività e criteri di valutazione in forma discorsiva, senza elenchi. Mostra buona specificità disciplinare citando concetti chiave (allucinazioni, bias, verifica fonti) e attività di analisi critica, ma manca un riferimento esplicito alle metriche di valutazione degli LLM e alle tecniche di prompting, che avrebbero aumentato la completezza e specificità. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 120,
+  "token": 750
+}

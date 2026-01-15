@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 0,
+    "totale_100": 92
+  },
+  "note_valutatore": "La definizione è corretta e concisa, in linea con la letteratura di settore[1][2][3]. L’esempio è pertinente e tipico per i LLM[4][7]. Il suggerimento di verifica delle fonti è adeguato. Manca solo un accenno esplicito al termine tecnico 'LLM' o 'modello generativo' nella definizione, e una maggiore specificità disciplinare (ad esempio, menzionare che il fenomeno riguarda in particolare i modelli di linguaggio o AI generativa). Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 4,
+  "token": 750
+}

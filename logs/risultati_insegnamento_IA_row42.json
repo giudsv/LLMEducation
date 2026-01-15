@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.85,
+    "penalty": 0,
+    "totale_100": 97
+  },
+  "note_valutatore": "La risposta segue un percorso narrativo progressivo dai fondamenti dei LLM fino all'integrazione nella valutazione, come richiesto dal prompt. Tutte le fasi sono ben articolate e coerenti con le pratiche didattiche e i contenuti dei corsi universitari sull'argomento[1][3][4]. Non sono presenti allucinazioni né imprecisioni. La specificità disciplinare è molto buona ma manca qualche riferimento diretto a architetture specifiche (Transformer, BERT, GPT) e alle metriche di valutazione, che avrebbero reso la risposta perfetta. Formato conforme."
+  ,
+  "tempo_s": 180,
+  "token": 650
+}

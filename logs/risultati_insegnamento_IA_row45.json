@@ -1,0 +1,34 @@
+{
+  "task": "T1",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Domande e opzioni sono tutte corrette, precise e aderenti alle istruzioni. La definizione di token è accurata e conforme alle fonti[1][2][3][4]. La relazione tra tokenizzazione e finestra di contesto è corretta e specifica[2][3]. La temperatura è spiegata in modo appropriato e disciplinare. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 120,
+  "token": 350
+}

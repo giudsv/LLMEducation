@@ -1,0 +1,33 @@
+{
+  "task": "T1",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Tutte le domande sono corrette, complete, chiare, rispettano le istruzioni e sono specifiche per la disciplina. Nessuna allucinazione, imprecisione o violazione di formato.",
+  "tempo_s": 0,
+  "token": 0
+}

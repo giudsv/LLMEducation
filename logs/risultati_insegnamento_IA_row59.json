@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T6",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.3,
+    "penalty": 0,
+    "totale_100": 86
+  },
+  "note_valutatore": "La risposta del modello Gemini struttura correttamente una micro-lezione con obiettivi, attività guidata e verifica finale, seguendo fedelmente l'istruzione few-shot fornita. L'esempio scelto (Giulio Cesare nella Rivoluzione Francese) è appropriato e chiaramente illustra il concetto di allucinazione LLM. La descrizione è lineare e ben organizzata. Punti di forza: aderenza perfetta alle istruzioni, chiarezza espositiva, correttezza concettuale. Limitazioni: la completezza potrebbe essere incrementata con dettagli su tempi, numero di studenti, o varianti dell'attività; la specificità disciplinare potrebbe approfondire ulteriormente meccanismi tecnici di hallucination nei transformer o differenze tra RAG e generazione libera. Nessuna allucinazione, imprecisione o violazione di formato rilevata.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

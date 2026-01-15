@@ -1,0 +1,34 @@
+{
+  "task": "T1",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 3,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 2,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.1,
+    "penalty": 3,
+    "totale_100": 65
+  },
+  "note_valutatore": "Domanda 1: L'indirizzo 172.16.2.10 è effettivamente di classe B, ma con subnet mask 255.255.255.0 l'indirizzo di rete è 172.16.2.0 solo se si considera la subnetting, non la classe naturale (che sarebbe 172.16.0.0). La spiegazione mescola la definizione di classe con il calcolo subnet, creando confusione concettuale e imprecisione disciplinare (penalità 2). Inoltre, la spiegazione afferma che la classe B ha subnet mask 255.255.255.0, che non è la default (allucinazione 1). Le altre domande sono corrette, chiare, specifiche e aderenti al formato richiesto. Il formato è rispettato."
+  ,
+  "tempo_s": 9,
+  "token": 1200
+}

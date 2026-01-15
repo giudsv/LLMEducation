@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T3",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Risposta eccellente. Correttezza: identifica correttamente l'errore dello studente (limite=1, non 0) e spiega il concetto di forma indeterminata 0/0 con precisione matematica. Completezza: copre errori nel risultato, errori concettuali, suggerimenti pedagogici, intuizione geometrica e dimostrazione rigorosa via de l'Hôpital. Chiarezza: struttura logica con sezioni ben organizzate, linguaggio accessibile ma rigoroso, esempi numerici (sen 0.01≈0.0099998). Aderenza istruzioni: fornisce feedback dettagliato, errori identificati, suggerimenti costruttivi e voto (4/10) come richiesto. Specificità disciplinare: dimostra padronanza di limiti notevoli, forme indeterminate, teorema de l'Hôpital, sviluppi di Taylor. Nessuna allucinazione rilevata; le citazioni sono appropriate. Formato markdown ben strutturato con intestazioni, elenchi e formule. Risposta completamente aderente al ruolo di valutatore educativo.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 0,
+    "totale_100": 92
+  },
+  "note_valutatore": "La valutazione è corretta, la spiegazione è chiara e aderente alle istruzioni. La risposta dello studente è valutata positivamente, ma la valutazione del modello avrebbe potuto esplicitare meglio che ARP non opera tra reti diverse (oltre la LAN) e che la funzione di ARP è limitata a specifici tipi di reti (Ethernet, ecc.), come indicato nelle fonti [1][3][4]. Nessuna allucinazione o imprecisione rilevata, formato rispettato."
+  ,
+  "tempo_s": 3,
+  "token": 900
+}

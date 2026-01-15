@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Il piano è dettagliato, progressivo, copre tutti i principali argomenti delle reti di calcolatori secondo i programmi universitari italiani, include esercizi pratici, quiz, simulazioni e strumenti didattici pertinenti. La struttura rispetta le istruzioni, è chiara e specifica per la disciplina. Nessuna allucinazione, imprecisione o violazione di formato rilevata."
+  ,
+  "tempo_s": 8,
+  "token": 1350
+}

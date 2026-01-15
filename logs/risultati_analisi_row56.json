@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 1,
+    "totale_100": 87
+  },
+  "note_valutatore": "La risposta è corretta nell'enunciato e nello stile richiesto, con chiarezza e specificità disciplinare. Penalità di 1 per imprecisione: la disuguaglianza $f(x_1) \\leq f(x) \\leq f(x_2)$ non è la forma standard dell'enunciato, che prevede $f(x_m) = m$ e $f(x_M) = M$ per qualche $x_m, x_M \\in [a,b]$, mentre qui sembra suggerire che $f(x_1)$ sia il minimo e $f(x_2)$ il massimo per ogni $x$, che può generare ambiguità. Nessuna allucinazione, nessuna violazione di formato."
+  ,
+  "tempo_s": 4,
+  "token": 900
+}

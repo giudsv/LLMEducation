@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T4",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 1,
+    "totale_100": 85
+  },
+  "note_valutatore": "La risposta è molto completa, chiara e aderente alle istruzioni. La sequenza logica bottom-up rispecchia fedelmente la didattica universitaria delle reti di calcolatori[1][2][3]. Gli argomenti trattati sono quelli canonici dei corsi di base, con una buona alternanza tra teoria e pratica. Si segnala una lieve imprecisione: il piano non menziona esplicitamente la commutazione di circuito/pacchetto e le strategie di multiplazione, che sono concetti fondamentali introdotti nei primi giorni nei programmi universitari[1]. Tuttavia, la struttura complessiva è solida e pedagogicamente efficace. Nessuna allucinazione o violazione di formato.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

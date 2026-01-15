@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "GPT-5",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 0,
+    "totale_100": 96
+  },
+  "note_valutatore": "La risposta è pienamente corretta: identifica e spiega in modo preciso entrambi gli errori concettuali dello studente, cita le fonti, distingue chiaramente tra UDP e TCP, fornisce suggerimenti pratici e contestualizza con esempi applicativi. Struttura e chiarezza sono ottime, nessuna allucinazione o imprecisione rilevata. Unico piccolo margine di miglioramento: la sezione 'Suggerimenti' potrebbe essere leggermente più sintetica, ma resta pienamente adeguata."
+  ,
+  "tempo_s": 4,
+  "token": 950
+}

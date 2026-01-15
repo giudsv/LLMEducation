@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 0,
+    "totale_100": 93
+  },
+  "note_valutatore": "La risposta è corretta e ben strutturata: copre tutte le fasi richieste (obiettivo, contesto, vincoli, formato di output) in modo lineare e senza elenchi grafici, come da istruzioni. Non presenta allucinazioni né imprecisioni. La completezza è molto buona ma manca un accenno esplicito a tecniche avanzate (es. multi-shot, autovalutazione della veridicità) che avrebbero aumentato la specificità disciplinare. La chiarezza è ottima. Nessuna violazione di formato."
+  ,
+  "tempo_s": 0,
+  "token": 0
+}

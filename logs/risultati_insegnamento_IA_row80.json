@@ -1,0 +1,31 @@
+{
+  "task": "T6",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 0,
+    "totale_100": 92
+  },
+  "note_valutatore": "La risposta è corretta e ben strutturata: distingue chiaramente tra conoscenza memorizzata nei LLM e recupero tramite RAG, spiega le fasi della micro-lezione (obiettivo, attività guidata, verifica finale) in modo lineare e aderente alle istruzioni. Manca solo qualche dettaglio operativo (es. esempi concreti di domande o strumenti), ma la specificità disciplinare è comunque buona. Nessuna allucinazione, imprecisione o violazione di formato."
+}

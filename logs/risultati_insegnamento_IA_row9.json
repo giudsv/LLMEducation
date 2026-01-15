@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "GPT-5",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.75,
+    "penalty": 0,
+    "totale_100": 95
+  },
+  "note_valutatore": "La risposta è impeccabile nella correzione delle imprecisioni concettuali dello studente, distinguendo chiaramente tra addestramento, inferenza e meccanismi di funzionamento dei LLM, senza allucinazioni o errori. Il feedback è completo, ma manca una breve esplicitazione di come introdurre i termini tecnici suggeriti, che avrebbe reso la proposta di miglioramento ancora più operativa. Il tono è professionale e incoraggiante, la struttura discorsiva è rispettata e la specificità disciplinare è elevata, con riferimenti puntuali a concetti chiave come tokenizzazione, generalizzazione e controllo umano."
+  ,
+  "tempo_s": 3,
+  "token": 850
+}

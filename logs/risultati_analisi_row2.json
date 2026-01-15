@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T1",
+  "disciplina": "Analisi",
+  "modello_risposto": "Claude",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.0,
+    "penalty": 1,
+    "totale_100": 72
+  },
+  "note_valutatore": "Le domande sono corrette, ben formulate e aderenti al livello universitario. Le spiegazioni sono chiare e pertinenti. Tuttavia, nella domanda 1 manca l'intervallo esplicito [1,2] nella formulazione, il che può generare ambiguità (imprecisione). Nessuna allucinazione o violazione di formato. Le risposte sono disciplinarmente specifiche e complete.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

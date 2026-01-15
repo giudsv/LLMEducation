@@ -1,0 +1,34 @@
+{
+  "task": "T1",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.45,
+    "penalty": 2,
+    "totale_100": 73
+  },
+  "note_valutatore": "La risposta è generalmente corretta, ben strutturata e chiara, con spiegazioni passo-passo come richiesto. Tuttavia, nella prima domanda, la risposta corretta sarebbe \"indirizzo IP e porta sia di origine che di destinazione\" (come da fonte [2]), mentre il modello si limita a menzionare solo IP e porta di destinazione, omettendo la necessità della porta di origine per identificare univocamente la connessione TCP. Questa è una lieve imprecisione disciplinare. Inoltre, la citazione delle fonti nei quiz non è perfettamente aderente (le fonti sono indicate tra parentesi quadre ma non direttamente collegate a ciascuna spiegazione), il che costituisce una lieve allucinazione rispetto alle istruzioni di formato attese. Nessuna grave violazione di formato."
+  ,
+  "tempo_s": 8,
+  "token": 900
+}

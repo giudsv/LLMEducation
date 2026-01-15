@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 3,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 3,
+    "specificita_disciplinare": 3
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 3.45,
+    "penalty": 1,
+    "totale_100": 20
+  },
+  "note_valutatore": "La risposta è corretta nei concetti base (bias, allucinazioni, verifica), ma manca di specificità disciplinare: non cita tecniche concrete di gestione (es. prompting, temperature, multi-shot, feedback umano)[1][2][4], né distingue tipologie di bias/allucinazioni[3]. La traccia è compatta e chiara, ma non esplicita strategie didattiche o strumenti operativi. Penalità per incompletezza disciplinare."
+  ,
+  "tempo_s": 120,
+  "token": 180
+}

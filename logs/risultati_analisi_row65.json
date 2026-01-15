@@ -1,0 +1,33 @@
+{
+  "task": "T6",
+  "disciplina": "Analisi",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.4,
+    "penalty": 1,
+    "totale_100": 80
+  },
+  "note_valutatore": "La risposta è corretta e rispetta le istruzioni, ma manca una dimostrazione formale o una citazione esplicita della definizione di derivata o del limite del rapporto incrementale, che sarebbe stato utile per completezza. L'imprecisione è minima: si cita la relazione esponenziale ma non si esplicita il passaggio logico completo. Nessuna allucinazione o violazione di formato.",
+  "tempo_s": 0,
+  "token": 0
+}

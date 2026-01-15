@@ -1,0 +1,33 @@
+{
+  "task": "T1",
+  "disciplina": "POO",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è pienamente corretta: tutte le domande e spiegazioni sono accurate, pertinenti e ben formulate, con due domande che includono codice Java come richiesto. Le opzioni sono plausibili e la risposta corretta è sempre indicata e motivata. Il formato è conforme alle istruzioni e la specificità disciplinare è elevata. Nessuna allucinazione, imprecisione o violazione di formato rilevata.",
+  "tempo_s": 210,
+  "token": 650
+}

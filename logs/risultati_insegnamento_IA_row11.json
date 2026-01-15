@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è corretta, completa e chiara: definizione precisa e aderente alle fonti, esempio pertinente e reale, suggerimento operativo per la verifica delle fonti conforme alle istruzioni. Nessuna allucinazione, imprecisione o violazione di formato. Specificità disciplinare piena: il testo è contestualizzato nell’uso dei LLM e nell’insegnamento dell’IA."
+  ,
+  "tempo_s": 90,
+  "token": 120
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.7,
+    "penalty": 1,
+    "totale_100": 85
+  },
+  "note_valutatore": "La risposta è corretta, chiara e ben strutturata: definisce le allucinazioni dei LLM in modo accurato, fornisce un esempio pertinente e suggerisce una strategia di mitigazione valida e coerente con le fonti[1][2][3]. Tuttavia, manca il riferimento esplicito a una fonte specifica come richiesto dalla consegna ('basata su fonti'), quindi si applica una penalità di formato. La specificità disciplinare è buona ma non eccellente: si poteva citare la natura probabilistica/statistica dei LLM o distinguere tra tipi di allucinazione. Nessuna allucinazione o imprecisione rilevata."
+  ,
+  "tempo_s": 6,
+  "token": 850
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 3,
+    "completezza": 4,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 2,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 3.65,
+    "penalty": 4,
+    "totale_100": 53
+  },
+  "note_valutatore": "La risposta copre i principali teoremi richiesti (unicità, permanenza del segno, confronto/carabinieri) con definizioni corrette e buoni esempi, mostrando chiarezza espositiva e specificità disciplinare. Tuttavia: \n- Sono presenti due errori concettuali rilevanti: (1) L'esempio del teorema della permanenza del segno è scorretto, perché f(x)=1/x^2 tende a 0, non a 0^+ (il teorema si applica solo a limiti diversi da zero); (2) L'esempio del teorema ponte è errato: f(x)=sin(x)/x con x_n=1/n porta a f(x_n)=sin(1/n)/(1/n)→1, non n sin(1/n)→1 come scritto, e la funzione non è definita in x=0. \n- Il teorema di Bolzano-Weierstrass non è tra i 'principali teoremi dei limiti' richiesti dal programma base, quindi la sua inclusione è parzialmente fuori tema. \n- Il riferimento bibliografico [LIBRO.pdf] è generico e non conforme alle istruzioni di citazione. \n- Il formato non è perfettamente aderente: manca una chiara separazione tra sezioni e non sono usate le convenzioni di evidenziazione richieste. \n- Penalità per allucinazione (inclusione di Bolzano-Weierstrass), imprecisioni (esempi errati), e violazione di formato (citazione e struttura)."
+  ,
+  "tempo_s": 11,
+  "token": 950
+}

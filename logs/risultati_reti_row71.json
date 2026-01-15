@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 0,
+    "totale_100": 96
+  },
+  "note_valutatore": "La risposta è corretta, chiara e ben argomentata. Viene spiegato il ruolo di ARP come ponte tra livello 3 e livello 2, con riferimento all'ambito LAN. Unico piccolo margine di miglioramento: si poteva menzionare esplicitamente che ARP opera tramite richieste broadcast e risposte unicast, ma la sintesi è comunque eccellente e pienamente adeguata al task. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 2,
+  "token": 900
+}

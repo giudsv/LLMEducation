@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T5",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Gemini 2.5 Pro",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Risposta eccellente. La scheda didattica copre completamente tutti gli aspetti richiesti: (1) Definizione corretta di HTTP come protocollo di livello applicativo con caratteristiche stateless e modello richiesta-risposta, coerente con i risultati di ricerca [1][3]. (2) Funzionamento passo-passo articolato in 7 fasi logiche e sequenziali (DNS, TCP, richiesta, elaborazione, risposta, chiusura, rendering), ben strutturato e didatticamente efficace. (3) Distinzione chiara tra GET e POST con esempi di sintassi HTTP corretti e conformi agli standard [3][5]. (4) Esempio pratico completo e realistico (ricerca e-commerce) che integra i concetti precedenti in uno scenario concreto. Formato: struttura con header markdown, sottosezioni, blocchi di codice con sintassi HTTP, elenchi puntati appropriati. Aderenza alle istruzioni: rispetta pienamente la richiesta di scheda didattica completa con spiegazione passo-passo, fasi GET/POST e esempio pratico. Specificità disciplinare: terminologia corretta (DNS, TCP, porta 80/443, codici di stato HTTP, body della richiesta, rendering), concetti di rete appropriati. Nessuna allucinazione rilevata; tutte le informazioni sono accurate e supportate dai risultati di ricerca forniti.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

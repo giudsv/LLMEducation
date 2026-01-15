@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T7",
+  "disciplina": "Analisi",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.7,
+    "penalty": 1,
+    "totale_100": 87
+  },
+  "note_valutatore": "La risposta è corretta, completa e ben strutturata, con esempi didatticamente validi e discussione critica delle ipotesi e dei limiti del teorema. Si segnala una lieve imprecisione nella derivata di sec²x-1 nell’esercizio guidato (il calcolo corretto è 2sec²x tanx, non 2sec²x tanx secx), ma senza conseguenze sul risultato finale. Nessuna allucinazione o violazione di formato. La lezione rispetta pienamente la struttura richiesta e la specificità disciplinare.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

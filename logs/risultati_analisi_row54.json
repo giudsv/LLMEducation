@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 1,
+    "totale_100": 87
+  },
+  "note_valutatore": "La risposta è corretta, ben strutturata e aderente allo stile richiesto. L'enunciato, le ipotesi, la tesi e la dimostrazione sono formalmente corretti e chiari. L'esempio pratico è pertinente e svolto correttamente. Unica imprecisione: nella dimostrazione si afferma che 'f(X) è un insieme chiuso e limitato', ma manca il riferimento esplicito alla compattezza e al teorema di Heine-Borel, che sono concetti chiave nella dimostrazione formale del teorema di Weierstrass secondo la letteratura specialistica [2][1]. Penalità minima per questa semplificazione."
+  ,
+  "tempo_s": 6,
+  "token": 650
+}

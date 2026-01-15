@@ -1,0 +1,34 @@
+{
+  "task": "T1",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "GPT-5",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Tutte le risposte sono corrette, ben motivate e prive di errori. Il ragionamento passo-passo è chiaro, aderente alle istruzioni e specifico per la disciplina. Nessuna allucinazione, imprecisione o violazione di formato rilevata."
+  ,
+  "tempo_s": 6,
+  "token": 950
+}

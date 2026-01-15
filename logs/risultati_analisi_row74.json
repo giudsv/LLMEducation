@@ -1,0 +1,33 @@
+{
+  "task": "T7",
+  "disciplina": "Analisi",
+  "modello_risposto": "Claude",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è corretta, completa, chiara e pienamente aderente alle istruzioni. Non sono presenti allucinazioni, imprecisioni o violazioni di formato. La struttura è rigorosa e la specificità disciplinare è elevata, con esempi e attività pertinenti al contesto universitario di Analisi Matematica.",
+  "tempo_s": 45,
+  "token": 1200
+}

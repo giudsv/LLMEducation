@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T3",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 0,
+    "totale_100": 93
+  },
+  "note_valutatore": "La risposta del modello è corretta e precisa: identifica chiaramente gli errori dello studente (TCP è orientato alla connessione e garantisce l'ordine dei pacchetti), fornisce spiegazioni tecniche accurate (handshake, numeri di sequenza, ACK, ritrasmissioni) e suggerimenti di studio pertinenti. Manca solo un accenno esplicito al controllo di congestione, che avrebbe reso la risposta ancora più completa. La struttura è chiara, aderisce alle istruzioni e dimostra alta specificità disciplinare.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

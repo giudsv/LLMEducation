@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è perfettamente corretta: il piano di studio segue la sequenza logica e didattica tipica di Analisi 1, coprendo tutti gli argomenti fondamentali (successioni, limiti, continuità, derivate, integrali, studio di funzione) in modo dettagliato e con spiegazione della progressione. Gli obiettivi giornalieri sono chiari, gli argomenti specifici e le motivazioni didattiche sono ben articolate. Non sono presenti allucinazioni, imprecisioni né violazioni di formato. La risposta rispetta tutte le istruzioni e mostra elevata specificità disciplinare."
+  ,
+  "tempo_s": 7,
+  "token": 950
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 3
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.0,
+    "penalty": 2,
+    "totale_100": 64
+  },
+  "note_valutatore": "La risposta è corretta e chiara, copre le fasi principali (obiettivo, contesto, vincoli, formato output) e segue una struttura lineare. Tuttavia, manca di riferimenti a tecniche specifiche di prompt engineering (es. few-shot, chain-of-thought) e non menziona limiti e rischi del prompting, come richiesto dalla disciplina IA-LLM. Usa un esempio di elenco grafico ('ad esempio in forma di elenco'), violando le istruzioni. È presente una lieve imprecisione: non viene esplicitato che il prompting non elimina del tutto le allucinazioni, ma le riduce. Penalità applicate per imprecisione e violazione formato."
+  ,
+  "tempo_s": 120,
+  "token": 180
+}

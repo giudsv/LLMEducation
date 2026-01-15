@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "POO",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta individua correttamente il bug principale (shadowing del parametro e mancata inizializzazione del campo), spiega con precisione la causa e l'effetto, propone la correzione appropriata con codice, aggiunge suggerimenti pertinenti (toString, setter opzionale), verifica il comportamento con esempi, assegna un voto motivato e rispetta pienamente le istruzioni. Non sono presenti allucinazioni, imprecisioni né violazioni di formato."
+  ,
+  "tempo_s": 4,
+  "token": 750
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.85,
+    "penalty": 0,
+    "totale_100": 97
+  },
+  "note_valutatore": "La risposta segue rigorosamente la richiesta di una procedura in passi testuali brevi, coprendo tutti gli aspetti richiesti (obiettivo, contesto, vincoli, fonti, formato, verifica finale). Ogni controllo è espresso in modo chiaro, operativo e pertinente. L'unica lieve carenza è nella specificità disciplinare: la procedura è generica e non fa riferimenti espliciti a tecniche o problematiche tipiche dell'IA generativa o dei LLM, ma resta pienamente applicabile al prompt engineering in questo ambito. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 120,
+  "token": 420
+}

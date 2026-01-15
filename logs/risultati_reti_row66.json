@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La correzione è impeccabile: spiega chiaramente l'errore concettuale dello studente, distingue in modo rigoroso tra IP e TCP, dettaglia le caratteristiche di entrambi, fornisce una tabella comparativa e suggerimenti didattici. Non sono presenti allucinazioni, imprecisioni o violazioni di formato. La risposta è completa, precisa e perfettamente aderente alle istruzioni e alla disciplina."
+  ,
+  "tempo_s": 3,
+  "token": 950
+}

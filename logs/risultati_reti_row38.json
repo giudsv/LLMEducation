@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T4",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude Sonnet 4.0",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 1,
+    "completezza": 1,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 1,
+    "specificita_disciplinare": 1
+  },
+  "penalita": {
+    "allucinazioni": 3,
+    "imprecisioni": 2,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 1.45,
+    "penalty": 6,
+    "totale_100": 0
+  },
+  "note_valutatore": "ALLUCINAZIONI CRITICHE: La risposta cita 10 file PDF (02_Introduzione.pdf, 03_ISO-OSI.pdf, ecc.) completamente assenti nei search results forniti. I risultati contengono solo URL di pagine web universitarie, non materiali didattici scaricabili. IMPRECISIONI: (1) Afferma che il modello ha usato 'esclusivamente le fonti del progetto' quando in realtà ha inventato riferimenti; (2) Cita dettagli specifici (es. 'SIFS, PIFS, DIFS, EIFS', 'RTS/CTS/Data/ACK 4-way handshake') non presenti nei search results. ADERENZA ISTRUZIONI: La query richiede un piano di 7 giorni per ripassare argomenti specifici (ISO/OSI, Ethernet, TCP/IP, routing, protocolli applicativi). Il piano è strutturato correttamente per 7 giorni, ma il contenuto è allucinato. CORRETTEZZA: Gravemente compromessa dalle allucinazioni. COMPLETEZZA: Formalmente completa (7 giorni + consigli), ma basata su fonti inesistenti. CHIAREZZA: Buona organizzazione strutturale e leggibilità. SPECIFICITA' DISCIPLINARE: Argomenti corretti ma dettagli inventati. VIOLAZIONI FORMAT: Uso di URL nei riferimenti bibliografici (restrizione #1 violata).",
+  "tempo_s": 0,
+  "token": 0
+}
+```

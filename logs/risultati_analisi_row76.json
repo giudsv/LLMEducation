@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 1,
+    "totale_100": 79
+  },
+  "note_valutatore": "La risposta è strutturata in modo chiaro, segue le istruzioni e copre tutti i punti richiesti: obiettivi didattici, sequenza dettagliata, attività pratiche. La correttezza è elevata e non vi sono errori concettuali. Tuttavia, manca la trattazione esplicita della definizione epsilon-delta di limite, che è centrale in un corso universitario di Analisi e presente nelle buone prassi didattiche [4][3]. Inoltre, la parte sugli asintoti e la continuità, spesso parte integrante delle lezioni sui limiti universitari, non viene menzionata. Penalità di 1 punto per imprecisione disciplinare (parziale incompletezza rispetto alle aspettative universitarie). Nessuna allucinazione o violazione di formato."
+  ,
+  "tempo_s": 7,
+  "token": 950
+}

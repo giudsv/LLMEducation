@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.7,
+    "penalty": 1,
+    "totale_100": 86
+  },
+  "note_valutatore": "La risposta è corretta, completa e chiara, coprendo tutte le fasi chiave del prompt engineering per ridurre le allucinazioni nei LLM, con riferimenti a obiettivo, contesto, vincoli, formato di output e gestione dell'incertezza, in linea con le best practice descritte nelle fonti[1][2][3]. Tuttavia, viola le istruzioni di formato: sono presenti elenchi grafici (titoli markdown e suddivisione in sezioni), mentre era richiesto un testo lineare senza elenchi o suddivisioni visive. La specificità disciplinare è buona ma non eccellente: manca qualche riferimento esplicito a tecniche avanzate (es. temperature, multi-shot, RAG) e a limiti del solo prompt engineering. Nessuna allucinazione o imprecisione rilevata."
+  ,
+  "tempo_s": 7,
+  "token": 720
+}

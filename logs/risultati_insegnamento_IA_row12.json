@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "GPT-5",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.25,
+    "penalty": 1,
+    "totale_100": 75
+  },
+  "note_valutatore": "La definizione è corretta ma semplificata: manca la distinzione tra tipologie di allucinazione (fattuali, logiche, ecc.) e non esplicita che il fenomeno può riguardare anche output sintatticamente corretti ma privi di senso o fuori contesto[1][2][4]. Il caso realistico è pertinente ma molto semplice; sarebbe stato preferibile un esempio più legato a contesti LLM avanzati o discipline specifiche. La strategia di verifica tramite citazioni è chiara e ben formulata, ma manca un riferimento esplicito alle cause delle allucinazioni e alle possibili tipologie di errore. Nessuna allucinazione, ma penalità per imprecisione dovuta a incompletezza concettuale rispetto alle fonti e alle best practice disciplinari."
+  ,
+  "tempo_s": 4,
+  "token": 750
+}

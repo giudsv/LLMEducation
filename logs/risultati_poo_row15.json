@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "POO",
+  "modello_risposto": "Gemini",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è corretta, completa e chiara: spiega passo-passo la differenza tra overloading e overriding in Java, con esempi minimali e dettagli sul comportamento a runtime. Viene rispettata la struttura richiesta, con tabella riassuntiva finale. Non sono presenti allucinazioni, imprecisioni né violazioni di formato. La specificità disciplinare è elevata, con riferimenti precisi a polimorfismo statico/dinamico, firma dei metodi e binding. Ottima aderenza alle istruzioni."
+  ,
+  "tempo_s": 210,
+  "token": 850
+}

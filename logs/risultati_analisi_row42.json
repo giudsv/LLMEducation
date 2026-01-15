@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "Analisi",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Il piano proposto rispetta pienamente il formato richiesto, presenta una progressione didattica coerente e crescente in difficoltà, copre in modo esaustivo i principali argomenti di Analisi (limiti, derivate, teoremi fondamentali, studio di funzione, integrali, serie), è chiaro e specifico per la disciplina. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 4,
+  "token": 950
+}

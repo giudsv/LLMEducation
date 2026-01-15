@@ -1,0 +1,33 @@
+{
+  "task": "T4",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 2,
+    "totale_100": 76
+  },
+  "note_valutatore": "La risposta è molto completa, chiara e segue fedelmente le istruzioni, con una struttura logica e dettagliata. Tuttavia, presenta alcune allucinazioni: i riferimenti [1]-[10] sono inventati e non corrispondono ai link forniti; alcuni dettagli tecnici (es. esercizi su CSMA/CD, specifiche di laboratorio) non sono supportati dai risultati di ricerca. Inoltre, alcune attività pratiche (es. Packet Tracer, Wireshark) sono citate senza conferma nei materiali di riferimento. Le imprecisioni includono l'assenza di menzione esplicita di IPv6, NAT, DHCP e sicurezza di rete, che sono presenti nei programmi ufficiali.",
+  "tempo_s": 60,
+  "token": 1500
+}

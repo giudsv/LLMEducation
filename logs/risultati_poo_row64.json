@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "POO",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.85,
+    "penalty": 1,
+    "totale_100": 87
+  },
+  "note_valutatore": "La risposta è corretta, completa, chiara e aderente alle istruzioni. Tuttavia, c'è una lieve imprecisione terminologica: la risposta parla di 'shadowing' per i metodi statici, mentre la terminologia corretta secondo la documentazione ufficiale Java è 'method hiding' e non 'shadowing' (shadowing si applica a variabili, non a metodi statici)[3][5]. Il resto della spiegazione e l'esempio sono perfetti e disciplinarmente solidi."
+  ,
+  "tempo_s": 4,
+  "token": 900
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta segue un ordine logico coerente con la progressione didattica, copre tutti gli aspetti richiesti (fondamenti, controllo, limiti, prompt engineering, attività didattiche, valutazione), esplicitando obiettivi concreti per ciascuna fase. Non sono presenti allucinazioni, imprecisioni o violazioni di formato. Il piano è specifico per la disciplina IA-LLM e rispetta le istruzioni del prompt."
+  ,
+  "tempo_s": 120,
+  "token": 650
+}

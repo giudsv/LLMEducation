@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.3,
+    "penalty": 0,
+    "totale_100": 86
+  },
+  "note_valutatore": "La risposta identifica correttamente le imprecisioni principali nel testo dello studente (origine non casuale dei bias, ruolo dei dati di addestramento, necessità di distinguere tra tipi di bias) e fornisce suggerimenti operativi e pertinenti per il miglioramento, inclusi esempi e strategie di mitigazione, in linea con le fonti[2][3][5][6][7]. Manca solo una citazione esplicita di fonti o riferimenti, ma il contenuto è accurato e specifico. Ottima chiarezza e struttura, nessuna allucinazione o violazione di formato."
+  ,
+  "tempo_s": 4,
+  "token": 750
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 1,
+    "totale_100": 79
+  },
+  "note_valutatore": "La risposta è corretta e chiara, con una definizione precisa del DNS, un esempio pratico ben strutturato e una spiegazione sintetica del funzionamento. Tuttavia, manca una menzione esplicita dei record DNS (ad esempio, record A, CNAME) e del concetto di cache, che sono elementi rilevanti per la completezza e la specificità disciplinare secondo le fonti[2][3][5]. L'imprecisione è lieve: la frase 'opera come un enorme database distribuito e gerarchico' è corretta ma sarebbe stato più rigoroso specificare che il DNS è un sistema di server distribuiti e non un database in senso stretto. Nessuna allucinazione rilevata e il formato è conforme alle istruzioni."
+  ,
+  "tempo_s": 6,
+  "token": 650
+}

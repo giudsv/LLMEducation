@@ -1,0 +1,34 @@
+{
+  "task": "T1",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Le domande sono corrette, pertinenti e ben formulate, coprono sia il concetto di contesto che di temperatura nei LLM, rispettano il formato richiesto (domanda + 4 opzioni, senza soluzione), e utilizzano terminologia disciplinare appropriata. Nessuna allucinazione, imprecisione o violazione di formato rilevata."
+  ,
+  "tempo_s": 2,
+  "token": 900
+}

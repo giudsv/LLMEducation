@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 0,
+    "totale_100": 93
+  },
+  "note_valutatore": "La risposta è corretta, ben strutturata e segue un ordine logico di apprendimento. Gli obiettivi sono concreti e coerenti con l'integrazione dei LLM nella didattica. Manca solo qualche dettaglio operativo (esempi di attività o strumenti specifici) che avrebbe reso il piano più completo e specifico, ma la trattazione copre tutti i punti essenziali richiesti dal prompt. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 4,
+  "token": 900
+}

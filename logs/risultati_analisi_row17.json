@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "Analisi",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.55,
+    "penalty": 1,
+    "totale_100": 79
+  },
+  "note_valutatore": "La risposta è corretta e ben argomentata, utilizza il teorema del confronto come richiesto e cita la simmetria per il limite destro e sinistro. Penalità per imprecisione: la catena di disuguaglianze riportata (sin x < x < tan x) non è formalmente corretta per tutti i segni di x e manca la precisazione che la disuguaglianza va considerata in valore assoluto o separatamente per x>0 e x<0. Inoltre, la spiegazione non esplicita il passaggio finale di applicazione del teorema del confronto come nei migliori standard didattici (manca la scrittura esplicita dei limiti delle funzioni di confronto)."
+  ,
+  "tempo_s": 4,
+  "token": 650
+}

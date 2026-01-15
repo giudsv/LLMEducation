@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 0,
+    "totale_100": 93
+  },
+  "note_valutatore": "La risposta è corretta, ben strutturata e copre tutti i punti richiesti dal prompt: obiettivi didattici, sequenza di spiegazione e attività pratiche. La chiarezza espositiva è elevata e la progressione logica è coerente con una lezione di due ore. La completezza è buona, ma manca la menzione esplicita di strumenti pratici come Packet Tracer o casi di studio reali, che sono suggeriti nelle migliori pratiche didattiche per il subnetting[1][10]. La specificità disciplinare è elevata ma non massima, perché non vengono proposti scenari pratici complessi o esercizi di subnetting avanzato (es. VLSM, CIDR), né si fa riferimento a software di simulazione. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 7,
+  "token": 950
+}

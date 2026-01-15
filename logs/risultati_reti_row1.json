@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T1",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 2,
+    "completezza": 3,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 2,
+    "specificita_disciplinare": 2
+  },
+  "penalita": {
+    "allucinazioni": 3,
+    "imprecisioni": 2,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 2.65,
+    "penalty": 5,
+    "totale_100": 22
+  },
+  "note_valutatore": "ALLUCINAZIONI CRITICHE: Quiz 2 (802.1Q TPID), Quiz 3 (TCP handshake), Quiz 4 (IPv4 frammentazione), Quiz 5 (Wi-Fi DCF) contengono informazioni tecniche non presenti nei search results forniti e non verificabili. I risultati citano fonti esterne (PDF upload) non disponibili nei search results. IMPRECISIONI: Quiz 1 corretto ma generico. Mancano dettagli su Ethernet standard, TCP/IP stack completo, Wi-Fi 802.11 specifiche. ADERENZA ISTRUZIONI: Richiesto 'breve spiegazione' per ogni risposta - fornite ma superficiali e non ancorate ai search results disponibili. Citazioni [1]-[5] rimandano a fonti non verificabili. SPECIFICITA DISCIPLINARE: Contenuti corretti per Quiz 1, ma Quiz 2-5 presentano concetti avanzati (TPID 0x8100, NAV, RTS/CTS) non supportati dai search results forniti, suggerendo generazione autonoma non controllata. FORMATO: Corretto (markdown, headers, liste). COMPLETEZZA: 5 quiz generati come richiesto, ma qualità disomogenea.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

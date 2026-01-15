@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 0,
+    "totale_100": 96
+  },
+  "note_valutatore": "La definizione è precisa e coerente con le fonti[1][2][3][7], il caso realistico è pertinente e ben costruito, la strategia di verifica tramite citazioni è dettagliata e didatticamente corretta. L'unico piccolo margine di miglioramento riguarda la completezza: si poteva esplicitare che le allucinazioni possono anche essere fuorvianti e non solo inventate, ma la risposta resta pienamente adeguata al task e alle istruzioni."
+  ,
+  "tempo_s": 6,
+  "token": 650
+}

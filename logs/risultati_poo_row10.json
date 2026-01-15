@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T1",
+  "disciplina": "POO",
+  "modello_risposto": "Claude Sonnet 4.0",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 2,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.3,
+    "penalty": 3,
+    "totale_100": 65
+  },
+  "note_valutatore": "Risposta ben strutturata e generalmente corretta. Quiz 1 (Upcasting/Polimorfismo) e Quiz 5 (Ereditarietà) sono accurati e ben spiegati. Quiz 2 (Downcasting) è corretto. Tuttavia: (1) ALLUCINAZIONE CRITICA - Quiz 3 su classi astratte cita materiali non presenti nei search results forniti (riferimenti [2] non contengono informazioni su classi astratte); (2) ALLUCINAZIONE - Quiz 4 su keyword 'this' cita materiale [4] non disponibile nei search results; (3) IMPRECISIONE - Le citazioni [1][2][3][4][5] rimandano a file PDF non presenti nei search results forniti, violando l'istruzione di usare esclusivamente i materiali del progetto; (4) Tre quiz su cinque (Quiz 3, 4, 5) non sono direttamente supportati dai search results forniti, anche se Quiz 1 e 2 su upcasting/downcasting sono ben fondati. (5) Il requisito 'Includi almeno un quiz su upcasting/downcasting con codice Java breve' è soddisfatto (Quiz 1 e 2). Formato e chiarezza espositiva sono eccellenti. La risposta dimostra buona comprensione della POO ma non rispetta il vincolo di basarsi esclusivamente sui materiali forniti.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

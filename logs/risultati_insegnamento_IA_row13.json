@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta identifica con precisione gli errori concettuali, fornisce spiegazioni corrette e riscrive solo le frasi necessarie, mantenendo stile e tono. Non sono presenti allucinazioni, imprecisioni né violazioni di formato. La specificità disciplinare è elevata e la correzione è completa e chiara."
+  ,
+  "tempo_s": 2,
+  "token": 650
+}

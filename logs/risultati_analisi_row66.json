@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "Analisi",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.75,
+    "penalty": 0,
+    "totale_100": 95
+  },
+  "note_valutatore": "La correzione è corretta e ben argomentata: identifica l'errore sul calcolo della derivata e sull'applicazione della regola del quoziente, spiega la regola corretta e fornisce la formula esatta. Manca solo una breve dimostrazione formale della derivata di ln(x), ma la spiegazione è sufficiente per il contesto di correzione. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 110,
+  "token": 420
+}

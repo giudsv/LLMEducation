@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 0,
+    "totale_100": 96
+  },
+  "note_valutatore": "Risposta di alta qualità. Correttezza: tutti i tre teoremi fondamentali (unicità, permanenza del segno, confronto) sono enunciati e spiegati correttamente con definizioni rigorose e coerenti con i risultati di ricerca. Gli esempi pratici sono appropriati e ben sviluppati, in particolare l'esempio del teorema del confronto con x²sin(1/x). Completezza: include i tre teoremi richiesti più tre teoremi aggiuntivi (somma, prodotto, quoziente) che arricchiscono la scheda; tuttavia, manca una dimostrazione formale dei teoremi fondamentali, che potrebbe essere considerata parte della completezza per una scheda didattica universitaria. Chiarezza: struttura eccellente con header, definizioni distinte da esempi, uso appropriato di LaTeX per le formule matematiche, linguaggio accessibile ma rigoroso. Aderenza istruzioni: rispetta perfettamente la richiesta di scheda didattica con definizioni ed esempi per ciascun teorema. Specificità disciplinare: terminologia corretta, notazioni matematiche standard, riferimenti appropriati al contesto dell'Analisi Matematica. Penalità: nessuna allucinazione, imprecisione o violazione di formato rilevata. La citazione [1] è generica (riferimento a un PDF non verificabile), ma non costituisce errore nella risposta stessa.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

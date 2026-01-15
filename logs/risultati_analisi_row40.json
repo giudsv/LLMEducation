@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Il piano di studio è corretto, completo e ben strutturato: copre tutti gli argomenti fondamentali di Analisi 1 (limiti, derivate, integrali, studio di funzione), rispetta la scansione settimanale richiesta, distingue chiaramente tra argomenti e tipologia di esercizi, e utilizza terminologia disciplinare precisa. Non ci sono allucinazioni, imprecisioni né violazioni di formato."
+  ,
+  "tempo_s": 4,
+  "token": 850
+}

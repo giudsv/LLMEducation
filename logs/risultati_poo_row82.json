@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "POO",
+  "modello_risposto": "Claude",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è rigorosamente corretta, completa e chiara. Copre in modo esaustivo teoria, esempi pratici, verifica finale, e analisi del caso dello studente, con spiegazioni precise e coerenti con la disciplina. Non sono presenti allucinazioni, imprecisioni né violazioni di formato. Tutte le istruzioni del prompt sono rispettate."
+  ,
+  "tempo_s": 420,
+  "token": 2600
+}

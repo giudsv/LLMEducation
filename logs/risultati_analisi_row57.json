@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "GPT-5",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 2,
+    "totale_100": 84
+  },
+  "note_valutatore": "La risposta è corretta, completa, chiara e segue le istruzioni, con ottima specificità disciplinare. Penalità 1 per imprecisione: nell'esempio numerico manca la specifica dell'intervallo chiuso e limitato su cui si applica il teorema (il testo lascia $$$$ vuoto). Penalità 1 per violazione format: la citazione [1] è ripetuta in modo eccessivo e non conforme alle istruzioni di citazione (dovrebbe essere posta solo dove necessario, non in ogni frase)."
+  ,
+  "tempo_s": 120,
+  "token": 650
+}

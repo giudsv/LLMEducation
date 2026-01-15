@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 1,
+    "totale_100": 92
+  },
+  "note_valutatore": "Risposta corretta, completa, chiara e specifica per IA-LLM. Definizione, esempio e suggerimento sono pertinenti e ben formulati. Penalità per violazione formato: la risposta usa intestazioni Markdown (###) invece di testo breve come richiesto dall’istruzione ('testo breve')."
+  ,
+  "tempo_s": 180,
+  "token": 320
+}

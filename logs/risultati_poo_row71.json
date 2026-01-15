@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "POO",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è pienamente corretta: spiega in modo dettagliato e preciso che le interfacce Java non possono avere campi di istanza mutabili (sono sempre public static final) e che, da Java 9, possono avere metodi privati non statici. L'analisi è completa, chiara, aderente alle istruzioni e con terminologia disciplinare appropriata. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 3,
+  "token": 900
+}

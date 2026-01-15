@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T7",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.15,
+    "penalty": 2,
+    "totale_100": 66
+  },
+  "note_valutatore": "La risposta segue correttamente il formato richiesto (introduzione, concetti chiave, esercizio pratico, verifica, suggerimenti didattici) e dimostra buona aderenza alle istruzioni. Tuttavia, presenta alcune criticità: (1) ALLUCINAZIONE: i riferimenti bibliografici [1]-[5] citati rimandano a URL di file PDF che non sono presenti nei search results forniti, violando l'integrità delle fonti; (2) IMPRECISIONE: la descrizione del TPID 0x8100 e del TCI con VLAN ID a 12 bit è corretta ma non è supportata dai search results forniti, che non contengono dettagli tecnici così specifici su 802.1Q; (3) L'esercizio pratico è ben strutturato e didatticamente valido, ma manca di collegamento esplicito ai concetti di backward learning e flooding descritti nei search results; (4) La sezione su STP, VLAN e trunking è accurata dal punto di vista tecnico ma va oltre il contenuto dei search results disponibili, suggerendo possibile integrazione di conoscenza non verificata. La chiarezza è buona, la completezza è adeguata per un contesto educativo, ma la correttezza è compromessa dalle allucinazioni sulle fonti.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

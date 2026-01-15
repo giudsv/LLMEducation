@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 3,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.4,
+    "penalty": 1,
+    "totale_100": 75
+  },
+  "note_valutatore": "La risposta è corretta e chiara, l'enunciato del teorema di Weierstrass è riportato in modo preciso e aderente allo stile richiesto. Tuttavia, manca un minimo di approfondimento o contestualizzazione (ad esempio, non viene esplicitato che i punti di massimo e minimo esistono effettivamente nell'intervallo, né viene menzionata la necessità di entrambe le ipotesi di chiusura e limitatezza), quindi la completezza non è massima. Penalità per imprecisione: la citazione della fonte è formattata come nota bibliografica e non come semplice riferimento, e il riferimento non è necessario in una scheda di questo tipo secondo le istruzioni date (lo stile richiesto era quello dell'esempio, che non includeva riferimenti bibliografici)."
+  ,
+  "tempo_s": 4,
+  "token": 900
+}

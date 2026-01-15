@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 1,
+    "totale_100": 92
+  },
+  "note_valutatore": "Risposta eccellente: il feedback è corretto, completo, chiaro, aderente alle istruzioni e specifico per la disciplina. Viene chiarita la differenza tra bias sistematici e errori casuali, tra bias nei dati e bias in generazione, con esempi e strategie di mitigazione. Penalità di formato: la risposta usa elenchi grafici ('### Punti di forza', '### Aree da chiarire', '### Come migliorare'), violando le istruzioni che richiedono testo discorsivo senza elenchi grafici."
+  ,
+  "tempo_s": 180,
+  "token": 650
+}

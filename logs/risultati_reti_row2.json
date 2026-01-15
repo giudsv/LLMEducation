@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T1",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude Sonnet 4.0",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 2,
+    "completezza": 1,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 2,
+    "specificita_disciplinare": 2
+  },
+  "penalita": {
+    "allucinazioni": 3,
+    "imprecisioni": 2,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 2.15,
+    "penalty": 5,
+    "totale_100": 24
+  },
+  "note_valutatore": "ALLUCINAZIONI CRITICHE: Il modello cita fonti esterne (ppl-ai-file-upload.s3.amazonaws.com) non presenti nei search results forniti. Quiz 2 su Ethernet/MAC è completamente allucinato (nessuna informazione su MAC nei risultati). Quiz 3 su TCP/RcvWindow non è supportato dai search results. Quiz 4 su subnetting IP non è nei risultati. Quiz 5 su RTS/CTS Wi-Fi non è nei risultati. IMPRECISIONI: Il modello dichiara 'Basandomi esclusivamente sulle fonti del progetto' ma utilizza fonti non fornite. Solo Quiz 1 è parzialmente supportato dai search results [1][2] sul Livello Network. COMPLETEZZA: 4 su 5 quiz su argomenti non coperti dai search results forniti (Ethernet, TCP, IP subnetting, Wi-Fi). ADERENZA ISTRUZIONI: Richiesti quiz su 'protocolli e livelli del modello ISO/OSI, su Ethernet, TCP/IP e Wi-Fi' ma solo il Livello Network è documentato nei risultati. SPECIFICITA DISCIPLINARE: Contenuti corretti dal punto di vista accademico ma non derivabili dalle fonti assegnate.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

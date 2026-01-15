@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 3,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 3
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 3.85,
+    "penalty": 1,
+    "totale_100": 68
+  },
+  "note_valutatore": "La definizione è corretta ma semplificata: manca la distinzione tra tipologie di allucinazione (fattuale, logica, ecc.) e le cause profonde (es. natura statistica, limiti dati addestramento)[1][2][3][4]. L'esempio è realistico ma poco specifico per il contesto LLM. La strategia di verifica suggerita (chiedere citazioni e controllare fonti) è valida ma non menziona limiti intrinseci dei LLM nel fornire fonti affidabili[3]. Penalità per incompletezza disciplinare e mancata articolazione delle cause."
+  ,
+  "tempo_s": 7,
+  "token": 750
+}

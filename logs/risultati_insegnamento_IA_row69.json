@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 3
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.3,
+    "penalty": 1,
+    "totale_100": 75
+  },
+  "note_valutatore": "La risposta è corretta e ben strutturata, copre tutti i punti richiesti (obiettivo, contesto, vincoli, fonti, formato, verifica finale) in modo chiaro e sequenziale. Tuttavia, manca una specificità disciplinare legata all’IA o ai LLM: la procedura è generica e non fa riferimenti a particolarità del prompt engineering per l’IA o LLM, né a esempi o accorgimenti specifici per questi sistemi. L’imprecisione è dovuta a questa genericità rispetto al contesto disciplinare richiesto."
+  ,
+  "tempo_s": 4,
+  "token": 850
+}

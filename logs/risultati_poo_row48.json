@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T4",
+  "disciplina": "POO",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta del modello Sonar è eccellente. Soddisfa pienamente tutti i criteri: (1) Correttezza: tutti i concetti POO sono accurati e allineati con i curricula universitari forniti (classi, oggetti, incapsulamento, ereditarietà, polimorfismo, interfacce, classi astratte, casting, final). (2) Completezza: il piano copre 10 giorni come richiesto, con obiettivo, concetti chiave, esercizio di coding e motivazione pedagogica per ogni giorno. (3) Chiarezza: la struttura è ben organizzata con header markdown, esercizi concreti e motivazioni pedagogiche articolate in due frasi. (4) Aderenza alle istruzioni: rispetta perfettamente il prompt (tutor POO, piano 10 giorni, obiettivi, concetti, esercizi, motivazione pedagogica in due frasi). (5) Specificità disciplinare: la sequenza didattica è pedagogicamente solida, progredisce logicamente dalle basi (classi/oggetti) ai concetti avanzati (casting, final), con esercizi progressivi su una classe Punto che si evolve. La progressione rispecchia le best practice didattiche per POO. Nessuna allucinazione, imprecisione o violazione di formato rilevata.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "POO",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.45,
+    "penalty": 2,
+    "totale_100": 65
+  },
+  "note_valutatore": "La risposta spiega correttamente la differenza tra overloading e overriding e individua l'errore di compilazione dovuto alla mancata corrispondenza della firma del metodo. Tuttavia, afferma erroneamente che 'il codice compila senza errori', mentre in realtà la chiamata v.f(5) causa un errore di compilazione (non di runtime), come da specifica Java e fonti[1][2][3]. La correzione proposta è pertinente e il feedback è chiaro e ben strutturato. Penalità per imprecisione (affermazione sulla compilazione) e per lieve allucinazione (contraddizione tra testo e voto assegnato)."
+  ,
+  "tempo_s": 8,
+  "token": 420
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "GPT-5",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Il piano di studio è perfettamente corretto, copre tutti i principali argomenti delle reti di calcolatori in modo progressivo e logico, con obiettivi, teoria e attività pratiche per ciascun giorno. La sequenza è motivata e rispetta la logica didattica della disciplina. Non sono presenti allucinazioni, imprecisioni né violazioni di formato. La risposta è chiara, dettagliata e aderente alle istruzioni, con elevata specificità disciplinare."
+  ,
+  "tempo_s": 8,
+  "token": 950
+}

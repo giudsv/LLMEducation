@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 0,
+    "totale_100": 93
+  },
+  "note_valutatore": "La risposta è corretta e ben strutturata: elenca i passi chiave per scrivere prompt robusti contro le allucinazioni, come specificare obiettivo, pubblico, contesto, vincoli e formato di output. Manca solo un riferimento esplicito all'uso di esempi o tecniche avanzate (es. Chain-of-Thought, ART), che avrebbero aumentato la completezza e la specificità disciplinare. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 90,
+  "token": 210
+}

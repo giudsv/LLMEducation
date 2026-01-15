@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 1,
+    "totale_100": 92
+  },
+  "note_valutatore": "La risposta è corretta, completa, chiara e ben strutturata, coprendo tutti i punti richiesti dal prompt (ragionamento, importanza, esempio numerico). L'unica imprecisione rilevata è nell'esempio numerico: l'intervallo su cui si applica la funzione f(x) = x^2 - 2x + 3 viene lasciato in bianco ('sull'intervallo chiuso e limitato ****'), ma dal contesto e dai calcoli si deduce che si intende [0,3]. Penalità di 1 per questa imprecisione formale, nessuna allucinazione o violazione di formato."
+  ,
+  "tempo_s": 7,
+  "token": 950
+}

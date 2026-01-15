@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "Analisi",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è pienamente corretta: l'enunciato del teorema di de l'Hôpital è preciso e conforme alle fonti[2][3][1], le ipotesi sono ben esplicitate, e la distinzione tra le forme indeterminate trattabili è chiara. Gli esempi sono corretti, progressivi e ben spiegati, con verifica delle ipotesi e applicazione iterata dove necessario. La struttura segue fedelmente le istruzioni (introduzione teorica, esercizio guidato, discussione collettiva, verifica, sintesi). Il linguaggio è chiaro e rigoroso, con specificità disciplinare elevata. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 8,
+  "token": 950
+}

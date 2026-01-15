@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "POO",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è pienamente corretta: copre tutti i concetti richiesti (overloading, overriding, final, upcasting/downcasting, interfacce), la progressione è logica e coerente, ogni giorno presenta un esercizio concreto e mirato, la terminologia è precisa e disciplinare, la chiarezza espositiva è ottima. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 6,
+  "token": 1850
+}

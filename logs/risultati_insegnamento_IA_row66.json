@@ -1,0 +1,34 @@
+{
+  "task": "T1",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "Domande e opzioni sono corrette, complete e chiare. Coprono tokenizzazione, finestra di contesto e temperatura in modo specifico e disciplinare. Nessuna allucinazione, imprecisione o violazione di formato. Rispetta pienamente le istruzioni: solo domande e opzioni, nessuna spiegazione aggiuntiva."
+  ,
+  "tempo_s": 120,
+  "token": 350
+}

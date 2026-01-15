@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 0,
+    "totale_100": 96
+  },
+  "note_valutatore": "La definizione di allucinazione è precisa e corretta secondo le fonti[1][3][4][5]. L'esempio fornito è realistico e pertinente, mostrando un caso tipico di allucinazione fattuale (citazione inventata attribuita a Einstein)[2][4]. La strategia di verifica tramite richiesta di fonti è valida e coerente con le buone pratiche suggerite in letteratura[3][5]. Il testo è compatto, chiaro e rispetta le istruzioni di struttura e messaggi chiave. Unica piccola mancanza: non viene esplicitata la distinzione tra tipologie di allucinazione (fattuale, logica, ecc.), ma il focus richiesto era su un caso realistico e una strategia di verifica, quindi la completezza resta molto alta."
+  ,
+  "tempo_s": 3,
+  "token": 950
+}

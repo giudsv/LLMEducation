@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.7,
+    "penalty": 0,
+    "totale_100": 94
+  },
+  "note_valutatore": "La risposta è corretta e ben strutturata: identifica le imprecisioni nel testo dello studente (origine casuale dei bias e generazione di contenuti non presenti nei dati), chiarisce efficacemente che i bias derivano dai dati di addestramento e non da scelte casuali, e suggerisce come migliorare. Manca solo un riferimento esplicito alle diverse fasi di sviluppo in cui possono emergere bias (progettazione, selezione algoritmica, implementazione)[2], ma la specificità disciplinare resta comunque elevata. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 120,
+  "token": 650
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 0,
+    "totale_100": 92
+  },
+  "note_valutatore": "La risposta è corretta e ben strutturata: distingue chiaramente tra bias sistematici e errori casuali, corregge la definizione dello studente e suggerisce di chiarire la differenza tra bias nei dati e bias generativi, come richiesto dalle istruzioni. Il commento è discorsivo, non usa elenchi grafici, e mantiene un buon livello di specificità disciplinare, anche se avrebbe potuto citare esempi concreti di bias nei LLM per maggiore completezza."
+  ,
+  "tempo_s": 120,
+  "token": 350
+}

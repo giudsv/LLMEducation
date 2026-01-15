@@ -1,0 +1,33 @@
+{
+  "task": "T3",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è impeccabile: identifica correttamente entrambi gli errori concettuali dello studente (TCP non è senza connessione e garantisce l'ordine dei pacchetti), fornisce spiegazioni dettagliate e puntuali, include confronto con UDP, suggerimenti mirati e motivazione del voto. La struttura è chiara, completa e aderente alle istruzioni, senza allucinazioni né imprecisioni. Ottima specificità disciplinare e uso di terminologia tecnica corretta."
+,  "tempo_s": 4,
+  "token": 950
+}

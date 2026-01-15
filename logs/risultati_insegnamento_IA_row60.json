@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 0,
+    "totale_100": 92
+  },
+  "note_valutatore": "La risposta è corretta, ben strutturata e aderente alle istruzioni: esplicita obiettivi misurabili, fasi della lezione e criteri di valutazione, includendo la gestione di bias e allucinazioni come richiesto. Gli obiettivi sono specifici e valutabili; le fasi sono coerenti con la didattica attiva e la mitigazione dei rischi dei LLM. Manca solo una maggiore articolazione sulle strategie di gestione dei bias (ad esempio, nessun riferimento a tecniche di debiasing o a strumenti di verifica multipla), e la specificità disciplinare potrebbe essere ulteriormente rafforzata con riferimenti a framework educativi IA. Nessuna allucinazione, imprecisione o violazione di formato."
+  ,
+  "tempo_s": 4,
+  "token": 950
+}

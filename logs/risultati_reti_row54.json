@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Claude",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 1,
+    "totale_100": 92
+  },
+  "note_valutatore": "La risposta è estremamente completa, corretta e dettagliata, coprendo tutti gli aspetti richiesti dal prompt e aggiungendo anche esempi pratici, confronto con altri protocolli e dettagli tecnici. La struttura è chiara e la specificità disciplinare è massima. Tuttavia, la risposta non rispetta il formato richiesto dall'istruzione (scheda didattica sintetica come l'esempio su IP), risultando molto più lunga e articolata rispetto al modello richiesto. Penalità di 1 punto per violazione del formato."
+  ,
+  "tempo_s": 7,
+  "token": 1850
+}

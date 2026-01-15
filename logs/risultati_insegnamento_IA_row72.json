@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.6,
+    "penalty": 1,
+    "totale_100": 84
+  },
+  "note_valutatore": "La risposta è corretta, completa e chiara, con feedback dettagliato e puntuale sulle imprecisioni dello studente. Vengono forniti suggerimenti di miglioramento e punti di forza in modo discorsivo e professionale, senza elenchi. Tuttavia, la risposta presenta una violazione formale: i miglioramenti e i punti di forza sono espressi in più frasi separate e non in frasi lineari e discorsive come richiesto dalle istruzioni, risultando quindi in una penalità di formato."
+  ,
+  "tempo_s": 120,
+  "token": 450
+}

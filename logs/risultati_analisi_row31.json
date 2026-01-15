@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.4,
+    "penalty": 2,
+    "totale_100": 73
+  },
+  "note_valutatore": "La risposta è corretta nell'identificare l'errore concettuale dello studente e nel suggerire i metodi risolutivi (de l'Hôpital, Taylor). Tuttavia, presenta due imprecisioni: (1) afferma che applicando de l'Hôpital due volte si ottiene 1/2, ma in realtà basta una sola applicazione (la seconda derivata serve solo se si vuole mostrare il calcolo esplicitamente, ma non è necessaria); (2) cita come fonte un PDF non accessibile e non direttamente consultabile, che non è conforme alle istruzioni. Penalità per allucinazione (riferimento non verificabile) e imprecisione (procedura de l'Hôpital). Il formato è corretto e la specificità disciplinare è elevata."
+  ,
+  "tempo_s": 6,
+  "token": 900
+}

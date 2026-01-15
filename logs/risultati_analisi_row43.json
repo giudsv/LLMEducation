@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 2,
+    "totale_100": 84
+  },
+  "note_valutatore": "Il piano è corretto, completo, chiaro, aderente alle istruzioni e specifico per l'analisi. Penalità per: (1) Allucinazione: la fonte citata non è pertinente al contenuto della risposta e non giustifica la sequenza proposta; (2) Violazione formato: presenza di riferimenti bibliografici markdown non richiesti dal prompt e non previsti nel formato richiesto."
+  ,
+  "tempo_s": 210,
+  "token": 420
+}

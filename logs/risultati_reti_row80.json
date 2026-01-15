@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è corretta, completa e ben strutturata secondo il formato richiesto (introduzione, spiegazione, esercizio, verifica). Tutti i concetti chiave della commutazione Ethernet sono presenti e spiegati con precisione disciplinare: ruolo degli switch, differenza con hub, funzionamento della tabella di switching, forwarding, flood e broadcast. Nessuna allucinazione o imprecisione rilevata. Il formato è pienamente rispettato."
+  ,
+  "tempo_s": 4,
+  "token": 950
+}

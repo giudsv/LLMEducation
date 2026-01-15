@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.55,
+    "penalty": 3,
+    "totale_100": 69
+  },
+  "note_valutatore": "La risposta è corretta nell'enunciato, nel ragionamento e nell'esempio, e rispetta la struttura richiesta. Tuttavia, presenta alcune imprecisioni: (1) l'affermazione che l'immagine di una funzione continua su [a,b] sia un intervallo chiuso non è sempre vera (l'immagine è compatta, non necessariamente un intervallo); (2) manca la menzione esplicita della compattezza come concetto chiave; (3) l'esempio numerico è corretto ma non discute il caso di massimo/minimo interno/estremo. Penalità per: (a) imprecisione concettuale su immagine intervallo, (b) lieve incompletezza disciplinare (non menziona compattezza), (c) violazione formato: citazione fittizia [LIBRO.pdf] non ammessa secondo istruzioni, (d) lieve allucinazione per la stessa citazione non verificabile nei risultati."
+  ,
+  "tempo_s": 7,
+  "token": 650
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T5",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "Gemini",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è corretta, completa e ben strutturata: descrive accuratamente entrambi i protocolli, evidenzia tutte le differenze principali (connessione, affidabilità, ordinamento, velocità, controllo di flusso/congestione, casi d'uso), fornisce esempi pratici pertinenti e utilizza una tabella comparativa chiara. Non sono presenti allucinazioni, imprecisioni né violazioni di formato. La specificità disciplinare è elevata e l'aderenza alle istruzioni è totale."
+  ,
+  "tempo_s": 6,
+  "token": 650
+}

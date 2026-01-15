@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "POO",
+  "modello_risposto": "Claude",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è impeccabile: il piano di studio segue una progressione didattica solida e coerente con i principi della POO, coprendo tutti i concetti chiave (classi, ereditarietà, polimorfismo, interfacce, ecc.) in modo graduale e motivato. Ogni giorno include obiettivi, concetti chiave, esercizio pratico e motivazione pedagogica in due frasi, come richiesto. La chiarezza espositiva è elevata, il linguaggio è preciso e specifico per la disciplina, e la struttura rispetta pienamente le istruzioni. Non si rilevano allucinazioni, imprecisioni né violazioni di formato."
+  ,
+  "tempo_s": 8,
+  "token": 1250
+}

@@ -1,0 +1,34 @@
+{
+  "task": "T4",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5,
+    "penalty": 1,
+    "totale_100": 92
+  },
+  "note_valutatore": "La risposta è corretta, completa, chiara, aderente alle istruzioni e specifica per il contesto IA-LLM. Definizione, esempio e strategia di mitigazione sono ben esposti e coerenti con le fonti[1][2][3][4][5][6]. Tuttavia, manca un riferimento esplicito alle fonti come richiesto dall'istruzione ('basata su fonti'), che costituisce una violazione formale del formato atteso."
+  ,
+  "tempo_s": 5,
+  "token": 750
+}

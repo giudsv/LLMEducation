@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T7",
+  "disciplina": "Analisi",
+  "modello_risposto": "Sonar",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 4,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 4,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.0,
+    "penalty": 2,
+    "totale_100": 72
+  },
+  "note_valutatore": "La risposta struttura correttamente una lezione di due ore con sezioni ben organizzate (introduzione teorica, esempi guidati, esercizi, verifica). La correzione dello studente è sostanzialmente corretta: identifica l'errore (derivazione solo del numeratore) e fornisce il metodo corretto. Tuttavia, presenta due problemi: (1) Allucinazione minore: il riferimento a '[LIBRO.pdf]' appare tre volte senza giustificazione e non è parte della risposta richiesta; (2) Imprecisione: nella sezione 'Esempio 1' il passaggio da sin(x)/x a cos(x)/1 non è formalmente corretto—dovrebbe mostrare il rapporto delle derivate come (cos x)/(1), non come uguaglianza diretta. La risposta aderisce bene alle istruzioni (progettazione didattica + correzione dello studente) ed è appropriata per un contesto universitario. La chiarezza è buona ma il formato con i riferimenti fantasma riduce la qualità complessiva.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

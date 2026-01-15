@@ -1,0 +1,34 @@
+{
+  "task": "T6",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 0,
+    "totale_100": 96
+  },
+  "note_valutatore": "La risposta è corretta, ben articolata e centrata sugli aspetti critici dell’uso dei LLM in ambito educativo. Gli obiettivi sono chiari e coerenti con la letteratura di settore[1][3][5], le attività sono realistiche e pertinenti, e i criteri di valutazione sono sintetici ma efficaci. L’assenza di elenchi grafici rispetta le istruzioni. Unica piccola carenza: la sequenza di lezione avrebbe potuto esplicitare maggiormente la fase di discussione/metariflessione, ma la completezza resta elevata."
+  ,
+  "tempo_s": 4,
+  "token": 950
+}

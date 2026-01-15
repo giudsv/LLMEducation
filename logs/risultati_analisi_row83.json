@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 5,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 5.0,
+    "penalty": 0,
+    "totale_100": 100
+  },
+  "note_valutatore": "La risposta è impeccabile: spiega correttamente il teorema di de l'Hôpital, le sue ipotesi e la procedura, risponde in modo preciso all'errore dello studente, integra esempi guidati, esercizi pratici e una verifica finale come richiesto. Il formato è coerente con le istruzioni, nessuna allucinazione o imprecisione rilevata, ottima specificità disciplinare e chiarezza didattica."
+  ,
+  "tempo_s": 7,
+  "token": 1200
+}

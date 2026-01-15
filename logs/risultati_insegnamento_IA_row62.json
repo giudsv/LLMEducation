@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.65,
+    "penalty": 1,
+    "totale_100": 85
+  },
+  "note_valutatore": "La risposta è corretta, chiara, ben strutturata e aderente alle istruzioni, con traguardi settimanali e risorse suggerite in frasi lineari. La specificità disciplinare è buona ma non eccellente: le risorse sono generiche (es. 'guide pratiche', 'articoli su AI ethics') e non vengono citati esempi concreti o fonti specifiche, che avrebbero rafforzato la pertinenza per l'insegnamento IA-LLM. Penalità per violazione di formato: la risposta è un unico paragrafo articolato, non una sequenza di frasi lineari come richiesto dal prompt."
+  ,
+  "tempo_s": 4,
+  "token": 950
+}

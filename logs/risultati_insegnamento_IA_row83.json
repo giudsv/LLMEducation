@@ -1,0 +1,34 @@
+{
+  "task": "T7",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Sonar",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 4,
+    "completezza": 3,
+    "chiarezza": 4,
+    "aderenza_istruzioni": 3,
+    "specificita_disciplinare": 3
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 1,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 3.55,
+    "penalty": 2,
+    "totale_100": 60
+  },
+  "note_valutatore": "Il piano proposto è coerente e corretto nei contenuti, ma manca la suddivisione esplicita in micro-obiettivi settimanali e le risorse suggerite sono troppo generiche (non sono indicate in frasi lineari come richiesto dal formato). Penalità per imprecisione (risorse non dettagliate) e violazione formato (frasi lineari non rispettate)."
+  ,
+  "tempo_s": 120,
+  "token": 450
+}

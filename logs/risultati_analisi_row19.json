@@ -1,0 +1,34 @@
+{
+  "task": "T2",
+  "disciplina": "Analisi",
+  "modello_risposto": "Gemini",
+  "tecnica": "Few-shot",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 2,
+    "chiarezza": 3,
+    "aderenza_istruzioni": 2,
+    "specificita_disciplinare": 2
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 1
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 3.05,
+    "penalty": 3,
+    "totale_100": 44
+  },
+  "note_valutatore": "La risposta è corretta nel risultato del limite, ma la spiegazione è incompleta e non segue la struttura degli esempi forniti (manca il dettaglio del procedimento, ad esempio lo sviluppo di Taylor o il teorema dei carabinieri, che sono i metodi tipici richiesti). L'uso del teorema di de l'Hôpital è accettabile ma non citato negli esempi e non viene mostrato il calcolo. Penalità per allucinazione (citazione non supportata dal documento), imprecisione (spiegazione troppo sintetica e non aderente agli esempi), violazione formato (manca la struttura richiesta: spiegazione dettagliata come negli esempi)."
+  ,
+  "tempo_s": 70,
+  "token": 110
+}

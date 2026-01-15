@@ -1,0 +1,35 @@
+```json
+{
+  "task": "T4",
+  "disciplina": "Reti di Calcolatori",
+  "modello_risposto": "GPT-5",
+  "tecnica": "Zero-shot",
+  "criteri": {
+    "correttezza": 3,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 4
+  },
+  "penalita": {
+    "allucinazioni": 1,
+    "imprecisioni": 1,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 3.85,
+    "penalty": 2,
+    "totale_100": 77
+  },
+  "note_valutatore": "La risposta è chiara, ben strutturata e aderisce alle istruzioni. Tuttavia, presenta una lieve imprecisione: il piano di studio fornito è solo parziale (manca il giorno 4 e i successivi), nonostante il prompt richiedesse un piano completo di 7 giorni. Inoltre, la parte sui protocolli applicativi (prevista dal prompt) non è sviluppata, e non sono presenti riferimenti a protocolli come HTTP, FTP, SMTP, DNS, ecc., che sono fondamentali in Reti di Calcolatori[1][2][5]. Non sono state rilevate allucinazioni gravi, ma la mancanza di completezza su un punto chiave del task (protocolli applicativi) è penalizzante. Nessuna violazione di formato.",
+  "tempo_s": 0,
+  "token": 0
+}
+```

@@ -1,0 +1,34 @@
+{
+  "task": "T3",
+  "disciplina": "IA-LLM",
+  "modello_risposto": "Claude",
+  "tecnica": "CoT",
+  "criteri": {
+    "correttezza": 5,
+    "completezza": 4,
+    "chiarezza": 5,
+    "aderenza_istruzioni": 5,
+    "specificita_disciplinare": 5
+  },
+  "penalita": {
+    "allucinazioni": 0,
+    "imprecisioni": 0,
+    "violazioni_format": 0
+  },
+  "peso_criteri": {
+    "correttezza": 0.35,
+    "completezza": 0.20,
+    "chiarezza": 0.15,
+    "aderenza_istruzioni": 0.15,
+    "specificita_disciplinare": 0.15
+  },
+  "score": {
+    "parziale": 4.8,
+    "penalty": 0,
+    "totale_100": 96
+  },
+  "note_valutatore": "La risposta corregge puntualmente tutte le imprecisioni concettuali presenti nel testo dello studente, distinguendo tra memorizzazione e riconoscimento di pattern, evitando antropomorfismi e chiarendo la necessità di controllo umano. Il feedback è sintetico, discorsivo e aderente alle istruzioni, con suggerimenti prioritari e punti di forza ben integrati. Unico margine di miglioramento: la completezza può essere ulteriormente arricchita esplicitando esempi di applicazioni o rischi, ma la risposta è già molto solida e specifica."
+  ,
+  "tempo_s": 120,
+  "token": 650
+}
