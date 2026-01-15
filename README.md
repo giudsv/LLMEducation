@@ -1,6 +1,6 @@
 # Valutazione Sperimentale degli LLM nella Didattica Universitaria
 
-> **Repository ufficiale della Tesi di Laurea in Informatica** > **Università degli Studi di Salerno** > *Uso dei Large Language Models a supporto dell'insegnamento e della comprensione didattica*
+> **Repository ufficiale della Tesi di Laurea in Informatica** > **Università degli Studi di Salerno** > *Uso dei large language models a supporto dell’insegnamento e della comprensione didattica: studio sperimentale su task educativi*
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/Status-Completed-success.svg)]()
