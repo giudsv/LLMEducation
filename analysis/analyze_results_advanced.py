@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Advanced Analysis for LLM Education Experiments (local, no API)
+Advanced Analysis for LLM Education Experiments (Visual Enhanced Version)
 
 Usage (PowerShell):
   python analyze_results_advanced.py "C:\\path\\to\\*_scored.xlsx"
@@ -25,9 +25,33 @@ except Exception:
 
 try:
     import matplotlib.pyplot as plt
+    # Configurazione estetica globale (Stile Accademico)
+    plt.rcParams['font.family'] = 'sans-serif'
+    plt.rcParams['axes.edgecolor'] = '#333333'
+    plt.rcParams['axes.grid'] = True
+    plt.rcParams['grid.alpha'] = 0.3
+    plt.rcParams['grid.linestyle'] = '--'
+    plt.rcParams['figure.titlesize'] = 14
+    plt.rcParams['axes.labelsize'] = 12
     HAS_MPL = True
 except Exception:
     HAS_MPL = False
+
+# Palette Colori Brandizzata
+MODEL_COLORS = {
+    'GPT-5': '#10a37f',            # OpenAI Teal
+    'Gemini 2.5 Pro': '#1a73e8',   # Google Blue
+    'Claude Sonnet 4.5': '#d97757', # Anthropic Sienna
+    'Sonar': '#4f46e5'             # Perplexity Indigo
+}
+# Fallback per modelli sconosciuti
+DEFAULT_COLOR = '#666666'
+
+TECH_COLORS = {
+    'Zero-shot': '#94a3b8', # Slate 400
+    'Few-shot': '#475569',  # Slate 600
+    'CoT': '#1e293b'        # Slate 800
+}
 
 REQ_COLS = ["ID","Disciplina","Task","Tecnica","Modello","Prompt","Output_LLM","Score","Rank","Tempo_s","Token","Note_valutatore"]
 
@@ -77,7 +101,7 @@ def sanity_checks(df: pd.DataFrame):
     bad_rank_idx = []
     for _, sub in df.groupby(["Disciplina","Task","Tecnica"], dropna=False):
         ranks = pd.to_numeric(sub["Rank"], errors="coerce").dropna()
-        if ranks.empty: 
+        if ranks.empty:
             continue
         n = len(sub)
         # atteso: denso 1..n; inoltre “guard rail” su valori enormi
@@ -281,6 +305,157 @@ def outliers_by_group(df: pd.DataFrame, by: List[str]) -> pd.DataFrame:
             rows.append(row)
     return pd.DataFrame(rows)
 
+# ------------------- Visual Enhanced Charts -------------------
+
+def make_charts(df_all: pd.DataFrame, out_dir="figs"):
+    if not HAS_MPL:
+        print("[WARN] matplotlib non disponibile: salto grafici."); return
+    os.makedirs(out_dir, exist_ok=True)
+
+    # Helper function per estetica comune
+    def _apply_aesthetic(title, ylabel, ylim=None):
+        plt.title(title, fontsize=14, fontweight='bold', pad=15)
+        plt.ylabel(ylabel, fontsize=12)
+        if ylim: plt.ylim(ylim)
+        plt.xticks(rotation=15, ha='right')
+        plt.tight_layout()
+
+    # 1) Score medio per modello (Colored + Values)
+    if {"Modello","Score"}.issubset(df_all.columns):
+        plt.figure(figsize=(10, 6))
+        m = df_all.groupby("Modello")["Score"].mean().sort_values(ascending=False)
+        colors = [MODEL_COLORS.get(name, DEFAULT_COLOR) for name in m.index]
+        bars = plt.bar(m.index, m.values, color=colors, edgecolor='black', alpha=0.85)
+        # Etichette valori
+        for bar in bars:
+            yval = bar.get_height()
+            plt.text(bar.get_x() + bar.get_width()/2, yval + 0.5, f'{yval:.2f}', ha='center', va='bottom', fontweight='bold')
+        _apply_aesthetic("Score Medio per Modello (Performance Totale)", "Score (0-100)", (85, 105))
+        plt.savefig(os.path.join(out_dir, "score_medio_per_modello.png"))
+        plt.close()
+
+    # 2) Win-rate per modello (Rank=1) (Colored + Values)
+    if {"Modello","Rank"}.issubset(df_all.columns):
+        plt.figure(figsize=(10, 6))
+        wr = df_all.assign(_r=pd.to_numeric(df_all["Rank"], errors="coerce")) \
+                   .groupby("Modello")["_r"].apply(lambda s: (s==1).mean()) \
+                   .sort_values(ascending=False)
+        colors = [MODEL_COLORS.get(name, DEFAULT_COLOR) for name in wr.index]
+        bars = plt.bar(wr.index, wr.values, color=colors, edgecolor='black', alpha=0.85)
+        for bar in bars:
+            yval = bar.get_height()
+            plt.text(bar.get_x() + bar.get_width()/2, yval + 0.01, f'{yval:.2f}', ha='center', va='bottom', fontweight='bold')
+        _apply_aesthetic("Win-Rate per Modello (Probabilità di Rank 1)", "Frazione Vittorie")
+        plt.savefig(os.path.join(out_dir, "winrate_per_modello.png"))
+        plt.close()
+
+    # 3) Score medio per tecnica (Tech Colors)
+    if {"Tecnica","Score"}.issubset(df_all.columns):
+        plt.figure(figsize=(9, 6))
+        t = df_all.groupby("Tecnica")["Score"].mean().sort_values(ascending=False)
+        colors = [TECH_COLORS.get(name, DEFAULT_COLOR) for name in t.index]
+        bars = plt.bar(t.index, t.values, color=colors, edgecolor='black', alpha=0.8)
+        for bar in bars:
+            yval = bar.get_height()
+            plt.text(bar.get_x() + bar.get_width()/2, yval + 0.5, f'{yval:.2f}', ha='center', va='bottom', fontweight='bold')
+        _apply_aesthetic("Efficacia Media delle Tecniche di Prompting", "Score Medio", (85, 100))
+        plt.savefig(os.path.join(out_dir, "score_medio_per_tecnica.png"))
+        plt.close()
+
+    # 4) Boxplot degli score per modello (Colored Boxes)
+    if {"Modello","Score"}.issubset(df_all.columns):
+        plt.figure(figsize=(11, 6))
+        order = df_all.groupby("Modello")["Score"].mean().sort_values(ascending=False).index.tolist()
+        data = [pd.to_numeric(df_all.loc[df_all["Modello"]==m, "Score"], errors="coerce").dropna().values for m in order]
+        
+        bp = plt.boxplot(data, labels=order, patch_artist=True, vert=True, showfliers=True, 
+                         medianprops={'color':'black', 'linewidth':1.5})
+        
+        for patch, name in zip(bp['boxes'], order):
+            patch.set_facecolor(MODEL_COLORS.get(name, DEFAULT_COLOR))
+            patch.set_alpha(0.7)
+            
+        _apply_aesthetic("Distribuzione e Varianza degli Score per Modello", "Score")
+        plt.savefig(os.path.join(out_dir, "boxplot_score_per_modello.png"))
+        plt.close()
+
+    # 5) Boxplot degli score per tecnica (Colored Boxes)
+    if {"Tecnica","Score"}.issubset(df_all.columns):
+        plt.figure(figsize=(9, 6))
+        order = df_all.groupby("Tecnica")["Score"].mean().sort_values(ascending=False).index.tolist()
+        data = [pd.to_numeric(df_all.loc[df_all["Tecnica"]==tec, "Score"], errors="coerce").dropna().values for tec in order]
+        
+        bp = plt.boxplot(data, labels=order, patch_artist=True, vert=True, showfliers=True,
+                         medianprops={'color':'black', 'linewidth':1.5})
+        
+        for patch, name in zip(bp['boxes'], order):
+            patch.set_facecolor(TECH_COLORS.get(name, DEFAULT_COLOR))
+            patch.set_alpha(0.7)
+            
+        _apply_aesthetic("Varianza degli Score per Tecnica", "Score")
+        plt.savefig(os.path.join(out_dir, "boxplot_score_per_tecnica.png"))
+        plt.close()
+
+    # 6) Heatmap Disciplina × Modello (Professional Colormap)
+    if {"Disciplina","Modello","Score"}.issubset(df_all.columns):
+        pivot = df_all.pivot_table(index="Disciplina", columns="Modello", values="Score", aggfunc="mean")
+        if pivot.shape[0] and pivot.shape[1]:
+            plt.figure(figsize=(12, 8))
+            im = plt.imshow(pivot, aspect="auto", cmap="YlGnBu") # Colormap professionale
+            plt.xticks(range(pivot.shape[1]), pivot.columns, rotation=30, ha="right")
+            plt.yticks(range(pivot.shape[0]), pivot.index)
+            # Annotazioni celle
+            for i in range(pivot.shape[0]):
+                for j in range(pivot.shape[1]):
+                    val = pivot.iloc[i, j]
+                    color = "white" if val > 95 else "black" # Contrasto dinamico
+                    plt.text(j, i, f'{val:.1f}', ha="center", va="center", color=color, fontweight='bold')
+            
+            plt.title("Heatmap: Performance per Disciplina e Modello", fontsize=14, fontweight='bold', pad=15)
+            plt.colorbar(im, label="Score Medio")
+            plt.tight_layout()
+            plt.savefig(os.path.join(out_dir, "heatmap_disciplina_modello.png"))
+            plt.close()
+
+    # 7) Scatter Token vs Score con regressione (Styled)
+    if {"Token","Score"}.issubset(df_all.columns):
+        valid = df_all[["Token","Score"]].apply(pd.to_numeric, errors="coerce").dropna()
+        if len(valid) >= 3:
+            x, y = valid["Token"].values, valid["Score"].values
+            plt.figure(figsize=(10, 6))
+            plt.scatter(x, y, s=40, alpha=0.6, color='#475569', edgecolors='white') # Slate points
+            # Regressione
+            slope, intercept = np.polyfit(x, y, 1)
+            xs = np.linspace(x.min(), x.max(), 100)
+            ys = slope*xs + intercept
+            plt.plot(xs, ys, color='#e11d48', linewidth=2.5, label='Trend Line') # Red trend
+            
+            plt.legend()
+            _apply_aesthetic("Correlazione: Lunghezza Output vs Qualità", "Score")
+            plt.xlabel("Numero di Token", fontsize=12)
+            plt.savefig(os.path.join(out_dir, "scatter_token_score_regressione.png"))
+            plt.close()
+
+    # 8) Scatter Tempo_s vs Score con regressione (Styled)
+    if {"Tempo_s","Score"}.issubset(df_all.columns):
+        valid = df_all[["Tempo_s","Score"]].apply(pd.to_numeric, errors="coerce").dropna()
+        if len(valid) >= 3:
+            x, y = valid["Tempo_s"].values, valid["Score"].values
+            plt.figure(figsize=(10, 6))
+            plt.scatter(x, y, s=40, alpha=0.6, color='#0ea5e9', edgecolors='white') # Sky blue points
+            # Regressione
+            slope, intercept = np.polyfit(x, y, 1)
+            xs = np.linspace(x.min(), x.max(), 100)
+            ys = slope*xs + intercept
+            plt.plot(xs, ys, color='#e11d48', linewidth=2.5, label='Trend Line')
+            
+            plt.legend()
+            _apply_aesthetic("Correlazione: Tempo di Risposta vs Qualità", "Score")
+            plt.xlabel("Tempo (secondi)", fontsize=12)
+            plt.savefig(os.path.join(out_dir, "scatter_tempo_score_regressione.png"))
+            plt.close()
+
+
 # ------------------- Export -------------------
 
 def save_excel(df_all: pd.DataFrame, out_xlsx: str):
@@ -339,94 +514,6 @@ def save_excel(df_all: pd.DataFrame, out_xlsx: str):
         # Raw
         df_feat.to_excel(xl, sheet_name="Raw_With_Features", index=False)
 
-def make_charts(df_all: pd.DataFrame, out_dir="figs"):
-    if not HAS_MPL:
-        print("[WARN] matplotlib non disponibile: salto grafici."); return
-    import numpy as np
-    import os
-    os.makedirs(out_dir, exist_ok=True)
-
-    def _bar(series, title, ylabel, fname):
-        plt.figure()
-        series.plot(kind="bar")
-        plt.title(title); plt.ylabel(ylabel); plt.tight_layout()
-        plt.savefig(os.path.join(out_dir, fname)); plt.close()
-
-    # 1) Score medio per modello
-    if {"Modello","Score"}.issubset(df_all.columns):
-        m = df_all.groupby("Modello")["Score"].mean().sort_values(ascending=False)
-        _bar(m, "Score medio per modello", "Score medio", "score_medio_per_modello.png")
-
-    # 2) Win-rate per modello (Rank=1)
-    if {"Modello","Rank"}.issubset(df_all.columns):
-        wr = df_all.assign(_r=pd.to_numeric(df_all["Rank"], errors="coerce")) \
-                   .groupby("Modello")["_r"].apply(lambda s: (s==1).mean()) \
-                   .sort_values(ascending=False)
-        _bar(wr, "Win-rate (Rank=1) per modello", "Frazione di vittorie", "winrate_per_modello.png")
-
-    # 3) Score medio per tecnica
-    if {"Tecnica","Score"}.issubset(df_all.columns):
-        t = df_all.groupby("Tecnica")["Score"].mean().sort_values(ascending=False)
-        _bar(t, "Score medio per tecnica", "Score medio", "score_medio_per_tecnica.png")
-
-    # 4) Boxplot degli score per modello
-    if {"Modello","Score"}.issubset(df_all.columns):
-        plt.figure()
-        order = df_all.groupby("Modello")["Score"].mean().sort_values(ascending=False).index.tolist()
-        data = [pd.to_numeric(df_all.loc[df_all["Modello"]==m, "Score"], errors="coerce").dropna().values for m in order]
-        plt.boxplot(data, labels=order, vert=True, showfliers=True)
-        plt.title("Distribuzione degli Score per modello"); plt.ylabel("Score"); plt.tight_layout()
-        plt.savefig(os.path.join(out_dir, "boxplot_score_per_modello.png")); plt.close()
-
-    # 5) Boxplot degli score per tecnica
-    if {"Tecnica","Score"}.issubset(df_all.columns):
-        plt.figure()
-        order = df_all.groupby("Tecnica")["Score"].mean().sort_values(ascending=False).index.tolist()
-        data = [pd.to_numeric(df_all.loc[df_all["Tecnica"]==tec, "Score"], errors="coerce").dropna().values for tec in order]
-        plt.boxplot(data, labels=order, vert=True, showfliers=True)
-        plt.title("Distribuzione degli Score per tecnica"); plt.ylabel("Score"); plt.tight_layout()
-        plt.savefig(os.path.join(out_dir, "boxplot_score_per_tecnica.png")); plt.close()
-
-    # 6) Heatmap Disciplina × Modello (media score) con imshow
-    if {"Disciplina","Modello","Score"}.issubset(df_all.columns):
-        pivot = df_all.pivot_table(index="Disciplina", columns="Modello", values="Score", aggfunc="mean")
-        if pivot.shape[0] and pivot.shape[1]:
-            plt.figure()
-            plt.imshow(pivot, aspect="auto")
-            plt.xticks(range(pivot.shape[1]), pivot.columns, rotation=45, ha="right")
-            plt.yticks(range(pivot.shape[0]), pivot.index)
-            plt.title("Score medio per Disciplina × Modello")
-            plt.colorbar(label="Score medio")
-            plt.tight_layout()
-            plt.savefig(os.path.join(out_dir, "heatmap_disciplina_modello.png")); plt.close()
-
-    # 7) Scatter Token vs Score con regressione
-    if {"Token","Score"}.issubset(df_all.columns):
-        valid = df_all[["Token","Score"]].apply(pd.to_numeric, errors="coerce").dropna()
-        if len(valid) >= 3:
-            x, y = valid["Token"].values, valid["Score"].values
-            slope, intercept = np.polyfit(x, y, 1)
-            xs = np.linspace(x.min(), x.max(), 100); ys = slope*xs + intercept
-            plt.figure()
-            plt.scatter(x, y, s=10); plt.plot(xs, ys)
-            plt.title("Relazione tra Token e Score (con regressione)")
-            plt.xlabel("Token"); plt.ylabel("Score"); plt.tight_layout()
-            plt.savefig(os.path.join(out_dir, "scatter_token_score_regressione.png")); plt.close()
-
-    # 8) Scatter Tempo_s vs Score con regressione
-    if {"Tempo_s","Score"}.issubset(df_all.columns):
-        valid = df_all[["Tempo_s","Score"]].apply(pd.to_numeric, errors="coerce").dropna()
-        if len(valid) >= 3:
-            x, y = valid["Tempo_s"].values, valid["Score"].values
-            slope, intercept = np.polyfit(x, y, 1)
-            xs = np.linspace(x.min(), x.max(), 100); ys = slope*xs + intercept
-            plt.figure()
-            plt.scatter(x, y, s=10); plt.plot(xs, ys)
-            plt.title("Relazione tra Tempo_s e Score (con regressione)")
-            plt.xlabel("Tempo_s"); plt.ylabel("Score"); plt.tight_layout()
-            plt.savefig(os.path.join(out_dir, "scatter_tempo_score_regressione.png")); plt.close()
-
-
 def write_summary_md(df_all: pd.DataFrame, out_md="executive_summary.md"):
     with open(out_md, "w", encoding="utf-8") as f:
         f.write("# Executive Summary – Analisi Risultati LLM\n\n")
@@ -463,6 +550,7 @@ def main(argv: List[str]) -> int:
     make_charts(df_all, out_dir="figs")
     write_summary_md(df_all, out_md="executive_summary.md")
     print("[OK] Executive summary: executive_summary.md")
+    print("[OK] Grafici generati in 'figs/': 8 file creati con stile enhanced.")
     return 0
 
 if __name__ == "__main__":
